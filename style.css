@@ -1,0 +1,73 @@
+body {
+  background-color: #2d2d2d;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+body canvas {
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .inner {
+  position: relative;
+  width: 600px;
+  height: 450px;
+}
+body .inner svg {
+  position: absolute;
+  z-index: 1;
+}
+body .inner .greeting {
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+body .inner .greeting svg.newyear1 {
+  width: 100%;
+  height: 140px;
+  top: 65px;
+}
+body .inner .greeting svg.newyear1 .anim1 {
+  fill: none;
+  stroke: #c5ba9a;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+  stroke-dasharray: 2824.1877441406;
+  stroke-dashoffset: 2824.1877441406;
+  animation: draw 1.5s linear 0.5s forwards;
+}
+body .inner .greeting svg.newyear2 {
+  margin: auto;
+  height: 90px;
+  top: 39%;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 680px) {
+  body .inner .greeting svg.newyear2 {
+    width: 100%;
+    height: 158px;
+    top: 225px;
+  }
+}
+body .inner .greeting svg.newyear2 .anim2 {
+  fill: none;
+  stroke: #c5ba9a;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+  stroke-dasharray: 726.2219848633;
+  stroke-dashoffset: 726.2219848633;
+  animation: draw 0.5s linear 2s forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
