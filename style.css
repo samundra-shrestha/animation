@@ -13,6 +13,10 @@ body canvas {
      -moz-user-select: none;
           user-select: none;
 }
+body #fireworks {
+  position: absolute;
+  transition: opacity 0.5s linear;
+}
 body .inner {
   position: relative;
   width: 600px;

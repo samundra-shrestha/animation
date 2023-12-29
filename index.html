@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script>
         var triangle = confetti.shapeFromPath({ path: 'M0 10 L5 0 L10 10z' });
         var myCanvas = document.createElement('canvas');
@@ -92,6 +92,22 @@
         setTimeout(function(){
             myCanvas.remove();
         }, 3000)
+    </script> -->
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/@tsparticles/fireworks@3.0.3/tsparticles.fireworks.bundle.min.js
+    "></script>
+    <script>
+        fireworks({
+            sounds: false,
+        });
+
+        setTimeout(function () {
+           document.getElementById('fireworks').style.opacity="0"
+           setTimeout(function(){
+            document.getElementById('fireworks').remove();
+           }, 5000)
+        }, 5000)
     </script>
 </body>
 

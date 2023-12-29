@@ -10,6 +10,10 @@ body{
     position: absolute;
     user-select: none;
   }
+  #fireworks{
+    position: absolute;
+    transition: opacity .5s linear;
+  }
   .inner {
     position: relative;
     width: 600px;
